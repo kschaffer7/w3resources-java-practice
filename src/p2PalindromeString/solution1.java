@@ -9,8 +9,8 @@ import java.util.Locale;
 
 public class solution1 {
     public static void main(String[] args){
-        String string = "nurses run";
-        String cleanString = string.toLowerCase().replaceAll(" ", "");
+        String string = "Nurses run";
+        String cleanString = string.toLowerCase().replaceAll(" ", "").replaceAll(".", "");
         ArrayList<Character> stringArrayList = new ArrayList<Character>();
         String reversedString = "";
         for(int i = 0; i < cleanString.length(); i++){
@@ -27,5 +27,4 @@ public class solution1 {
             System.out.println(string + " is NOT a palindrome.");
         }
     }
-
 }
